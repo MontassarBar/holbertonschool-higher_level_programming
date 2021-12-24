@@ -15,8 +15,8 @@ if __name__ == '__main__':
         print("{} * {} = {}".format(
              int(argv[1]), int(argv[3]), int(argv[1]) * int(argv[3])))
     elif argv[2] == "/":
-        print("{} / {} = {:.0f}".format(
-            int(argv[1]), int(argv[3]), int(argv[1]) / int(argv[3])))
+        print("{} / {} = {}".format(
+            int(argv[1]), int(argv[3]), int(int(argv[1]) / int(argv[3]))))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
