@@ -9,4 +9,7 @@ def safe_print_list_integers(my_list=[], x=0):
         except TypeError:
             j += 1
     print()
-    return (i + 1) - j
+    if j >= 0:
+        return (i + 1) - j
+    else:
+        return 0
