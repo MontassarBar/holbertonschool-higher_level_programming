@@ -5,8 +5,8 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end="")
         except ValueError:
-            j = j - 1
+            j += 1
         except TypeError:
-            j = j - 1
+            j += 1
     print()
-    return j + i + 1
+    return (i + 1) - j
