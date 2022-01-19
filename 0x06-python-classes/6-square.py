@@ -47,13 +47,14 @@ class Square:
         return self.__size * self.__size
     '''print a square'''
     def my_print(self):
-        if self.__size == 0:
-            print()
-        for x in range(0, self.__position[1]):
-            print()
-        for i in range(0, self.__size):
-            for y in range(0, self.__position[0]):
-                print("{}".format(" "), end="")
-            for j in range(0, self.__size):
-                print("{}".format("#"), end="")
+        if self.__size != 0:
+            for x in range(0, self.__position[1]):
+                print()
+            for i in range(0, self.__size):
+                for y in range(0, self.__position[0]):
+                    print("{}".format(" "), end="")
+                for j in range(0, self.__size):
+                    print("{}".format("#"), end="")
+                print()
+        else:
             print()
