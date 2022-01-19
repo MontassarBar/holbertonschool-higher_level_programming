@@ -20,11 +20,11 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
+    '''property'''
     @property
     def position(self):
         return self.__position
-
+    '''setter'''
     @position.setter
     def position(self, position):
         if len(position) != 2\
