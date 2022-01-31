@@ -2,9 +2,6 @@
 '''a simple class'''
 
 
-from pyrsistent import v
-
-
 class BaseGeometry:
     '''BaseGeometry class'''
     def area(self):
