@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 '''Rectangle class'''
-from ast import arg
 from models.base import Base
 
 
