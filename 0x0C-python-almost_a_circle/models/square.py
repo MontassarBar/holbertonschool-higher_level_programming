@@ -10,5 +10,5 @@ class Square(Rectangle):
 
     def __Str__(self):
         '''return [Square] (<id>) <x>/<y> - <size>'''
-        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
-            self.id, self.x, self.y, self.height)
+        return "[Square] ({}) {}/{} - {}".format(
+            self.id, self.x, self.y, self.width)
