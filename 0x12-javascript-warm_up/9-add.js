@@ -6,7 +6,7 @@ function add (a, b) {
 const process = require('process');
 const args = process.argv;
 const y = add(parseInt(args[2]), parseInt(args[3]));
-if (isNaN(argv[2]) || isNaN(argv[3])) {
+if (isNaN(args[2]) || isNaN(args[3])) {
   console.log('NaN');
 } else {
   console.log(y);
