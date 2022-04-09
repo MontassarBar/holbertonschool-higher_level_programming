@@ -8,9 +8,9 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     '''the class definition of a State'''
-
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, unique=True, nullable=False,
