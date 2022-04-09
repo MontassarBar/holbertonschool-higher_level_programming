@@ -11,7 +11,7 @@ if __name__ == "__main__":
     c = db.cursor()
     c.execute("""
         SELECT
-            *
+            id, name
         FROM
             states
         WHERE
