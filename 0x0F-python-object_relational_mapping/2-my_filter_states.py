@@ -6,8 +6,9 @@
 import MySQLdb
 from sys import argv
 if __name__ == "__main__":
-    db = MySQLdb.Connect(host="localhost", port=3307, user=argv[
+    db = MySQLdb.Connect(host="localhost", port=3306, user=argv[
             1], passwd=argv[2], db=argv[3])
+    username = MySQLdb.real_escape_string()
     c = db.cursor()
     arg = argv[4]
     c.execute(
