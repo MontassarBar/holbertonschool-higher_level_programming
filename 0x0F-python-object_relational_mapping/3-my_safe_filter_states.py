@@ -15,9 +15,9 @@ if __name__ == "__main__":
         FROM
             states
         WHERE
-            name = '%s'
+            name =%s
         ORDER BY id ASC
-        """ % argv[4])
+        """, (argv[4],))
     query_rows = c.fetchall()
     for row in query_rows:
         print(row)
