@@ -2,7 +2,7 @@
 '''city class'''
 
 
-from sqlalchemy import Column, Integer, String, Column, ForeignKey
+from sqlalchemy import Integer, String, Column, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from model_state import Base, State
 
