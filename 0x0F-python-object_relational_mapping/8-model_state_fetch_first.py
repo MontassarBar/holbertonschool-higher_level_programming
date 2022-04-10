@@ -11,7 +11,9 @@ if __name__ == "__main__":
         'mysql+mysqldb://{}:{}@localhost/{}'.format(
             argv[1], argv[2], argv[3]))
     session = Session(engine)
-    for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
-        break
+    result = session.query(State).first()
+    if not result:
+        print("Nothing")
+    else:
+        print("{}: {}".format(result.id, result.name))
     session.close()
