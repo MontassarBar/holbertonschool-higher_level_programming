@@ -7,7 +7,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from model_state import Base, State
 
 
-
 class City(Base):
     '''the class definition of a City'''
 
