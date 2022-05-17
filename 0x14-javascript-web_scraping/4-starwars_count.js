@@ -6,7 +6,10 @@ axios.get(process.argv[2])
   .then(function (response) {
     for (let x = 0; x < response.data.results.length; x++) {
       for (let y = 0; y < response.data.results[x].characters.length; y++) {
-        if (response.data.results[x].characters[y] === 'https://swapi-api.hbtn.io/api/people/18/') { i++; }
+        axios.get(response.data.results[x].characters[y])
+          .then(function (re) {
+            if (re.data.name === 'Wedge Antilles') { i++; }
+          });
       }
     }
     console.log(i);
