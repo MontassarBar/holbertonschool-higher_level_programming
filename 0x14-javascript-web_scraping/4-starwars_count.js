@@ -2,6 +2,7 @@
 const axios = require('axios').default;
 const process = require('process');
 let i = 0;
+let id = 18
 axios.get(process.argv[2])
   .then(function (response) {
     for (let x = 0; x < response.data.results.length; x++) {
