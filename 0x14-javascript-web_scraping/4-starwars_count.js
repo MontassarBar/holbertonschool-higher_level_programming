@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const axios = require('axios').default;
 const process = require('process');
 let i = 0;
@@ -9,7 +10,4 @@ axios.get(process.argv[2])
       }
     }
     console.log(i);
-  })
-  .catch(function (error) {
-    console.log(error);
   });
